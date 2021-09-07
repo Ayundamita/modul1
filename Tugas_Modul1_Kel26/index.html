@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Fungsi di Javascript</title>
+</head>
+<script src="./src/script.js"></script>
+<body>
+   
+    <script>
+        var pertanyaan = confirm("Apakah kamu admin???")
+
+        var hasil = pertanyaan ? "Selamat datang admin, silahkan lengkapi data!!" : "Kamu tidak boleh di sini";
+        document.write(hasil);
+    </script>
+
+    <fieldset>
+        <legend>Input Form</legend>
+        <input type="text" name="barang" placeholder="input nama barang..." />
+        <input type="button" onclick="addBarang()" value="Tambah" /> 
+        <!-- onclick = events yang dipakai -->
+    </fieldset>
+
+    <div>
+        <ul id="list-barang">
+        </ul>
+    </div>
+
+    
+
+</body>
+</html>
